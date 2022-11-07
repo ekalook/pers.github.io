@@ -1,0 +1,301 @@
+body {
+  background-image : url(https://wallpapercave.com/dwp2x/aDKsdHs.jpg);
+  background-size: cover; 
+}
+
+h1, h2 {
+  font-family: 'Ralevey', sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+.container {
+  left: 100%;
+  max-width: 1200px;
+  margin: 0 5px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+#navbar {
+  width: 100%;
+  background-color: #be3144;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #000;
+  z-index: 5;
+  
+}
+.nav-content {
+  display: flex;
+  width: 100%;
+}
+
+
+.nav-content ul {
+display: flex;
+width: 100%;
+font-size: 24px;
+font-weight: bold;
+justify-content: flex-end;
+padding: 0;
+}
+.nav-content ul li {
+  display: inline-block;
+  margin-left: 35px;
+
+}
+.nav-content ul li:last-child {
+  margin-right: 0px;
+}
+
+.nav-content ul li a {
+  text-decoration: none;
+  color:#ffffff;
+  transition: all .4s ease-in-out;
+}
+.nav-content ul li a:hover {
+  color: #000;
+}
+
+#welcome-section {
+  margin-top: 15rem;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  font-style: italic;
+  color: #be3144 ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#projects .project-tile {
+  max-width: 850px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.1rem solid white;
+ 
+}
+
+#projects {
+  margin-top: auto;
+  text-align: center;
+  align-items: center;
+}
+
+#projects .cards {
+display: grid;
+grid-template-columns: 4fr;
+grid-gap: 50px 60px;
+width: 100%;
+}
+
+#projects .cards .card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+.cards .card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  left: 1rem;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+#projects .cards .card figcaption {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(0, 0, 0, .8);
+}
+#projects .cards .card img {
+  width: 100%;
+  height: 40vh; 
+  display: grid;
+  grid-template-columns: 4fr;
+
+}
+
+@media (min-width: 900px) {
+  #projects .cards {
+    grid-template-columns: 4fr 4fr 4fr 4fr; 
+  }
+
+
+
+  hr {
+  background-color: #be3144;
+  height: 4px;
+  border-color: #be3144
+
+  }
+   #projects .cards a:hover {
+   transition: all .5s ease-in-out;
+   transform: scale(1.1);
+   z-index: 5;
+ }
+ #contact .project-tile {
+ text-align: center;
+ margin-top: 10rem;
+}
+
+#contact p {
+  text-align: center;
+  margin-top: -2rem;
+}
+#contact {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  justify-content: center;
+
+}
+#contact:hover {
+  transform: scale(1.1);
+}
+
+#contact ul li a {
+  color: #45567d;
+  text-decoration: none;
+  
+}
+#contact ul {
+  display: flex;
+}
+
+#contact ul li {
+  display: block;
+  margin: 1.5rem;
+  transition: all .5s ease-in-out;
+}
+
+#contact ul li:hover {
+  transform: scale(1.1) rotate(-25deg);
+}
+#contact ul li a:hover {
+  color: #fff;
+}
+
+hr {
+  background-color: #be3144;
+  height: 4px;
+  border-color: #be3144 ;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3rem; 
+  color: #fff;
+}
+ .last {
+  margin-top: 1rem;
+}
+}
+@media (max-width: 667px) {
+  #projects .cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+}
+@media (min-width: 300px) {
+  #projects .cards .card img {
+    height: 25vh;  
+    display: grid;
+    grid-template-columns: 2fr;   
+  }
+ h1, p, #projects .project-tile{
+  margin-left: 2rem;
+  font-size: 35px;
+ }
+}
+
+
+ #projects .cards a:hover {
+   transition: all .5s ease-in-out;
+   transform: scale(1.1);
+   z-index: 5;
+ }
+#contact .project-tile {
+ text-align: center;
+ margin-top: 10rem;
+ margin-left: 2rem;
+}
+
+#contact p {
+  text-align: center;
+  margin-top: -2rem;
+  margin-left: 1.7rem;
+}
+#contact {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  justify-content: center;
+
+}
+#contact:hover {
+  transform: scale(1.1);
+}
+
+#contact ul li a {
+  color: #45567d;
+  text-decoration: none;
+  
+}
+#contact ul {
+  display: flex;
+}
+
+#contact ul li {
+  display: block;
+  margin: 1rem;
+  margin-right: 3rem;
+  transition: all .5s ease-in-out;
+}
+
+#contact ul li:hover {
+  transform: scale(1.1) rotate(-25deg);
+}
+#contact ul li a:hover {
+  color: #fff;
+}
+
+hr {
+  background-color: #be3144;
+  height: 4px;
+  margin-left: 0.5rem;
+  border-color: #be3144 ;
+}
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3rem; 
+  margin-left: 2rem;
+  color: #fff;
+}
+ .last {
+  margin-top: 1rem;
+}
+} 
